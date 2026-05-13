@@ -3,4 +3,5 @@ img/ads-imgs/*
 
 .DS_Store
 Thumbs.db
-.idea
+
+echo ".idea/" >> .gitignore
