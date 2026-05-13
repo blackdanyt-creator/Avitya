@@ -1,0 +1,102 @@
+.auth {
+  &__wrapper {
+    width: 400px;
+    margin: 0 auto;
+    padding: 36px;
+    background-color: $color-white-smoke;
+    border-radius: 12px;
+  }
+
+  &__form {
+    display: none;
+
+    &.active {
+      display: block;
+    }
+  }
+
+  &__switch {
+    display: flex;
+    margin-bottom: 20px;
+    border: 1px solid $color-gainsboro;
+    border-radius: 10px;
+    overflow: hidden;
+
+    &-item {
+      flex: 1;
+      text-align: center;
+      padding: 12px 0;
+      cursor: pointer;
+      font-size: 16px;
+      background: $color-white-smoke;
+      transition: background 0.2s, color 0.2s ease;
+      user-select: none;
+      position: relative;
+      font-family: $ff-manrope;
+
+      &:first-child {
+        background-color: $color-white-smoke;
+        border-right: 1px solid $color-gainsboro;
+      }
+
+      input {
+        position: absolute;
+        opacity: 0;
+        pointer-events: none;
+      }
+
+      &:has(input:checked) {
+        background-color: $color-gainsboro;
+        color: $color-black;
+      }
+    }
+  }
+
+  &__form {
+    &.active {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  &__label {
+    font-family: $ff-manrope;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 20px 0 8px;
+  }
+
+  &__input {
+    width: 100%;
+    border: 1px solid $color-silver;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+    line-height: 20px;
+    outline: transparent;
+    padding: 8px 12px;
+    font-family: $ff-manrope;
+
+    &-descr {
+        padding: 8px 0 0 0;
+        font-size: 12px;
+        font-weight: 400;
+        font-family: $ff-manrope;
+    }
+  }
+
+  &__btn {
+    margin: 20px 0 0 0;
+    padding: 10px 0;
+    display: block;
+    font-size: 16px;
+    font-family: $ff-manrope;
+    font-weight: 400;
+    width: 100%;
+    box-sizing: border-box;
+    background-image: linear-gradient(180deg, $color-summer-sky, $color-deep-sky-blue);
+    border-radius: 4px;
+    border: 1px solid $color-curious-blue;
+    color: $color-white;
+  }
+}

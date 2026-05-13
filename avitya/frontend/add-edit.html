@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Создать объявление</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="./js/add.js" type="module"></script>
+</head>
+<body>
+  <div class="page-wrap">
+    <header class="header">
+      <div class="container">
+        <div class="header__wrapper">
+          <a href="index.html" class="header__logo-link">
+            <svg class="header__logo" width="109" height="30" aria-hidden="true">
+              <use xlink:href="img/sprite.svg#header-logo"></use>
+            </svg>
+          </a>
+          <div class="header__middle">
+            <button class="header__middle-btn" type="button">
+              <svg class="header__middle-btn-icon" width="20" height="20" aria-hidden="true">
+                <use xlink:href="img/sprite.svg#category-icon"></use>
+              </svg>
+              <span class="header__middle-btn-text">Все категории</span>
+            </button>
+            <div class="header__middle-search">
+              <input class="header__middle-search-field" type="search" placeholder="Поиск по объявлениям" maxlength="100" />
+              <button class="header__middle-search-btn" type="button">Найти</button>
+            </div>
+            <a href="auth.html" class="header__middle-login">
+              <span class="header__middle-login-btn">Вход и&nbsp;регистрация</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="categories-menu">
+      <div class="container">
+        <div class="categories-menu__wrapper">
+          <ul class="categories-menu__list">
+            <li class="categories-menu__list-item">
+              <a href="category.html?category=Недвижимость" class="categories-menu__list-item-link">
+                <div class="categories-menu__list-item-link-left">
+                  <img src="./img/categories-imgs/landlord.png" alt="Недвижимость" width="28" height="22" />
+                  <span class="categories-menu__list-item-link-left-text">Недвижимость</span>
+                </div>
+                <div class="categories-menu__list-item-link-right">
+                  <svg width="20" height="20" aria-hidden="true"><use xlink:href="img/sprite.svg#icon-burger-arrow"></use></svg>
+                </div>
+              </a>
+            </li>
+            <li class="categories-menu__list-item">
+              <a href="category.html?category=Работа" class="categories-menu__list-item-link">
+                <div class="categories-menu__list-item-link-left">
+                  <img src="./img/categories-imgs/work.png" alt="Работа" width="28" height="22" />
+                  <span class="categories-menu__list-item-link-left-text">Работа</span>
+                </div>
+                <div class="categories-menu__list-item-link-right">
+                  <svg width="20" height="20" aria-hidden="true"><use xlink:href="img/sprite.svg#icon-burger-arrow"></use></svg>
+                </div>
+              </a>
+            </li>
+            <li class="categories-menu__list-item">
+              <a href="category.html?category=Хобби и отдых" class="categories-menu__list-item-link">
+                <div class="categories-menu__list-item-link-left">
+                  <img src="./img/categories-imgs/hobby.png" alt="Хобби и отдых" width="28" height="22" />
+                  <span class="categories-menu__list-item-link-left-text">Хобби и&nbsp;отдых</span>
+                </div>
+                <div class="categories-menu__list-item-link-right">
+                  <svg width="20" height="20" aria-hidden="true"><use xlink:href="img/sprite.svg#icon-burger-arrow"></use></svg>
+                </div>
+              </a>
+            </li>
+            <li class="categories-menu__list-item">
+              <a href="category.html?category=Животные" class="categories-menu__list-item-link">
+                <div class="categories-menu__list-item-link-left">
+                  <img src="./img/categories-imgs/animals.png" alt="Животные" width="28" height="22" />
+                  <span class="categories-menu__list-item-link-left-text">Животные</span>
+                </div>
+                <div class="categories-menu__list-item-link-right">
+                  <svg width="20" height="20" aria-hidden="true"><use xlink:href="img/sprite.svg#icon-burger-arrow"></use></svg>
+                </div>
+              </a>
+            </li>
+            <li class="categories-menu__list-item">
+              <a href="category.html?category=Услуги" class="categories-menu__list-item-link">
+                <div class="categories-menu__list-item-link-left">
+                  <img src="./img/categories-imgs/services.png" alt="Услуги" width="28" height="22" />
+                  <span class="categories-menu__list-item-link-left-text">Услуги</span>
+                </div>
+                <div class="categories-menu__list-item-link-right">
+                  <svg width="20" height="20" aria-hidden="true"><use xlink:href="img/sprite.svg#icon-burger-arrow"></use></svg>
+                </div>
+              </a>
+            </li>
+            <li class="categories-menu__list-item">
+              <a href="category.html?category=Электроника" class="categories-menu__list-item-link">
+                <div class="categories-menu__list-item-link-left">
+                  <img src="./img/categories-imgs/tech.png" alt="Электроника" width="28" height="22" />
+                  <span class="categories-menu__list-item-link-left-text">Электроника</span>
+                </div>
+                <div class="categories-menu__list-item-link-right">
+                  <svg width="20" height="20" aria-hidden="true"><use xlink:href="img/sprite.svg#icon-burger-arrow"></use></svg>
+                </div>
+              </a>
+            </li>
+            <li class="categories-menu__list-item">
+              <a href="category.html?category=Для дома и дачи" class="categories-menu__list-item-link">
+                <div class="categories-menu__list-item-link-left">
+                  <img src="./img/categories-imgs/for-countryside.png" alt="Для дома и дачи" width="28" height="22" />
+                  <span class="categories-menu__list-item-link-left-text">Для дома и&nbsp;дачи</span>
+                </div>
+                <div class="categories-menu__list-item-link-right">
+                  <svg width="20" height="20" aria-hidden="true"><use xlink:href="img/sprite.svg#icon-burger-arrow"></use></svg>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <main>
+      <div class="container">
+
+        <div class="breadcrumb">
+          <a href="index.html">Головна</a>
+          <span>›</span>
+          <span id="breadcrumb-label">Создать объявление</span>
+        </div>
+
+        <h1 class="page-title" id="page-heading">Создать объявление</h1>
+
+        <form id="adForm" enctype="multipart/form-data">
+          <div class="ad-layout">
+
+            <!-- Левая колонка. Форма -->
+            <div>
+
+              <!-- Секция 1. Основная информация -->
+              <div class="ad-section">
+                <h2 class="ad-section__title">
+                  <span class="ad-section__title-num">1</span>
+                  Основная информация
+                </h2>
+
+                <div class="field">
+                  <label class="field__label" for="title">Название объявления <span>*</span></label>
+                  <input class="field__input" type="text" name="title" id="title"
+                         placeholder="Например: iPhone 13 Pro, 256 ГБ, синий" required maxlength="150">
+                  <p class="field__hint">Коротко опишите товар или услугу</p>
+                </div>
+
+                <div class="field">
+                  <label class="field__label" for="description">Описание <span>*</span></label>
+                  <textarea class="field__textarea" name="description" id="description"
+                            placeholder="Детально опишите состояние, комплектацию, причину продажи..." required></textarea>
+                </div>
+
+                <div class="field-row">
+                  <div class="field">
+                    <label class="field__label" for="category">Категория <span>*</span></label>
+                    <select class="field__select" name="category" id="category" required>
+                      <option value="">Выберите категорию</option>
+                      <option value="Недвижимость">Недвижимость</option>
+                      <option value="Работа">Работа</option>
+                      <option value="Хобби и отдых">Хобби и отдых</option>
+                      <option value="Животные">Животные</option>
+                      <option value="Услуги">Услуги</option>
+                      <option value="Электроника">Электроника</option>
+                      <option value="Для дома и дачи">Для дома и дачи</option>
+                    </select>
+                  </div>
+
+                  <div class="field">
+                    <label class="field__label" for="state">Состояние</label>
+                    <select class="field__select" name="state" id="state">
+                      <option value="Б/у">Б/у</option>
+                      <option value="Новый">Новый</option>
+                      <option value="Не работает">Не работает</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Секция 2: Фото -->
+              <div class="ad-section">
+                <h2 class="ad-section__title">
+                  <span class="ad-section__title-num">2</span>
+                  Фото
+                </h2>
+
+                <div class="upload-area" id="upload-area">
+                  <input type="file" name="image" id="image" accept="image/*">
+                  <div class="upload-area__icon">📷</div>
+                  <div class="upload-area__text">
+                    <strong>Кликните или перетащите фото</strong><br>
+                    JPG, PNG — до 10 МБ
+                  </div>
+                </div>
+              </div>
+
+              <!-- Секция 3: Цена и локация -->
+              <div class="ad-section">
+                <h2 class="ad-section__title">
+                  <span class="ad-section__title-num">3</span>
+                  Цена и местоположение
+                </h2>
+
+                <div class="field-row">
+                  <div class="field">
+                    <label class="field__label" for="price">Цена <span>*</span></label>
+                    <div class="field__price-wrap">
+                      <input class="field__input" type="number" name="price" id="price"
+                             placeholder="0" min="0" required>
+                      <span class="field__price-symbol">₽</span>
+                    </div>
+                  </div>
+
+                  <div class="field">
+                    <label class="field__label" for="availability">Доступность</label>
+                    <select class="field__select" name="availability" id="availability">
+                      <option value="В наличии">В наличии</option>
+                      <option value="Под заказ">Под заказ</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="field">
+                  <label class="field__label" for="city">Город</label>
+                  <input class="field__input" type="text" name="city" id="city"
+                         placeholder="Например: Ростов-на-Дону">
+                </div>
+              </div>
+
+              <!-- Кнопка и статус -->
+              <button class="submit-btn" type="submit" id="submit-btn">Опубликовать</button>
+              <p id="status"></p>
+
+            </div>
+          </div>
+        </form>
+
+      </div>
+    </main>
+  </div>
+
+  <script src="./js/main.js" type="module"></script>
+</body>
+</html>

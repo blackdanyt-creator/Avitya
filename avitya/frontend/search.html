@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Результати пошуку</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+      <div class="container">
+        <div class="header__wrapper">
+          <a href="index.html" class="header__logo-link">
+            <svg class="header__logo" width="109" height="30" aria-hidden="true">
+              <use xlink:href="img/sprite.svg#header-logo"></use>
+            </svg>
+          </a>
+          <div class="header__middle">
+            <button class="header__middle-btn" type="button">
+              <svg class="header__middle-btn-icon" width="20" height="20" aria-hidden="true">
+                <use xlink:href="img/sprite.svg#category-icon"></use>
+              </svg>
+              <span class="header__middle-btn-text"> Все категории </span>
+            </button>
+            <div class="header__middle-search">
+              <input
+                class="header__middle-search-field"
+                type="search"
+                placeholder="Поиск по объявлениям"
+                maxlength="100"
+              />
+              <button class="header__middle-search-btn" type="button">Найти</button>
+              <a class="header__middle-create" href="add-edit.html">Создать объявление</a>
+            </div>
+            <a href="auth.html" class="header__middle-login">
+              <span class="header__middle-login-btn">Вход и&nbsp;регистрация</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="categories-menu">
+      <div class="container">
+        <div class="categories-menu__wrapper">
+          <ul class="categories-menu__list">
+            <li class="categories-menu__list-item">
+              <a href="category.html?category=Недвижимость" class="categories-menu__list-item-link">
+                <div class="categories-menu__list-item-link-left">
+                  <img src="./img/categories-imgs/landlord.png" alt="Недвижимость" class="categories-menu__list-item-link-left-image" width="28" height="22" />
+                  <span class="categories-menu__list-item-link-left-text">Недвижимость</span>
+                </div>
+                <div class="categories-menu__list-item-link-right">
+                  <svg class="categories-menu__list-item-link-right-icon" width="20" height="20" aria-hidden="true">
+                    <use xlink:href="img/sprite.svg#icon-burger-arrow"></use>
+                  </svg>
+                </div>
+              </a>
+            </li>
+            <li class="categories-menu__list-item">
+              <a href="category.html?category=Работа" class="categories-menu__list-item-link">
+                <div class="categories-menu__list-item-link-left">
+                  <img src="./img/categories-imgs/work.png" alt="Работа" class="categories-menu__list-item-link-left-image" width="28" height="22" />
+                  <span class="categories-menu__list-item-link-left-text">Работа</span>
+                </div>
+                <div class="categories-menu__list-item-link-right">
+                  <svg class="categories-menu__list-item-link-right-icon" width="20" height="20" aria-hidden="true">
+                    <use xlink:href="img/sprite.svg#icon-burger-arrow"></use>
+                  </svg>
+                </div>
+              </a>
+            </li>
+            <li class="categories-menu__list-item">
+              <a href="category.html?category=Хобби и отдых" class="categories-menu__list-item-link">
+                <div class="categories-menu__list-item-link-left">
+                  <img src="./img/categories-imgs/hobby.png" alt="Хобби и отдых" class="categories-menu__list-item-link-left-image" width="28" height="22" />
+                  <span class="categories-menu__list-item-link-left-text">Хобби и&nbsp;отдых</span>
+                </div>
+                <div class="categories-menu__list-item-link-right">
+                  <svg class="categories-menu__list-item-link-right-icon" width="20" height="20" aria-hidden="true">
+                    <use xlink:href="img/sprite.svg#icon-burger-arrow"></use>
+                  </svg>
+                </div>
+              </a>
+            </li>
+            <li class="categories-menu__list-item">
+              <a href="category.html?category=Животные" class="categories-menu__list-item-link">
+                <div class="categories-menu__list-item-link-left">
+                  <img src="./img/categories-imgs/animals.png" alt="Животные" class="categories-menu__list-item-link-left-image" width="28" height="22" />
+                  <span class="categories-menu__list-item-link-left-text">Животные</span>
+                </div>
+                <div class="categories-menu__list-item-link-right">
+                  <svg class="categories-menu__list-item-link-right-icon" width="20" height="20" aria-hidden="true">
+                    <use xlink:href="img/sprite.svg#icon-burger-arrow"></use>
+                  </svg>
+                </div>
+              </a>
+            </li>
+            <li class="categories-menu__list-item">
+              <a href="category.html?category=Услуги" class="categories-menu__list-item-link">
+                <div class="categories-menu__list-item-link-left">
+                  <img src="./img/categories-imgs/services.png" alt="Услуги" class="categories-menu__list-item-link-left-image" width="28" height="22" />
+                  <span class="categories-menu__list-item-link-left-text">Услуги</span>
+                </div>
+                <div class="categories-menu__list-item-link-right">
+                  <svg class="categories-menu__list-item-link-right-icon" width="20" height="20" aria-hidden="true">
+                    <use xlink:href="img/sprite.svg#icon-burger-arrow"></use>
+                  </svg>
+                </div>
+              </a>
+            </li>
+            <li class="categories-menu__list-item">
+              <a href="category.html?category=Электроника" class="categories-menu__list-item-link">
+                <div class="categories-menu__list-item-link-left">
+                  <img src="./img/categories-imgs/tech.png" alt="Электроника" class="categories-menu__list-item-link-left-image" width="28" height="22" />
+                  <span class="categories-menu__list-item-link-left-text">Электроника</span>
+                </div>
+                <div class="categories-menu__list-item-link-right">
+                  <svg class="categories-menu__list-item-link-right-icon" width="20" height="20" aria-hidden="true">
+                    <use xlink:href="img/sprite.svg#icon-burger-arrow"></use>
+                  </svg>
+                </div>
+              </a>
+            </li>
+            <li class="categories-menu__list-item">
+              <a href="category.html?category=Для дома и дачи" class="categories-menu__list-item-link">
+                <div class="categories-menu__list-item-link-left">
+                  <img src="./img/categories-imgs/for-countryside.png" alt="Для дома и дачи" class="categories-menu__list-item-link-left-image" width="28" height="22" />
+                  <span class="categories-menu__list-item-link-left-text">Для дома и&nbsp;дачи</span>
+                </div>
+                <div class="categories-menu__list-item-link-right">
+                  <svg class="categories-menu__list-item-link-right-icon" width="20" height="20" aria-hidden="true">
+                    <use xlink:href="img/sprite.svg#icon-burger-arrow"></use>
+                  </svg>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <main>
+        <section class="ads">
+            <div class="container">
+                <!-- Заголовок і кількість результатів заповнює JS -->
+                <h1 class="ads__info" id="search-title"></h1>
+                <ul class="ads__grid-list" id="ads-list"></ul>
+            </div>
+        </section>
+    </main>
+
+    <script src="./js/main.js" type="module"></script>
+</body>
+</html>

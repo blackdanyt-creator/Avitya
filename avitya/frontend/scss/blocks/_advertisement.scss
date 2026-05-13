@@ -1,0 +1,232 @@
+.advertisement {
+  &__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 322px;
+    gap: 200px;
+
+    &-info {
+      margin: 0 0 48px;
+    }
+
+    &-title {
+      font-family: $ff-manrope;
+      margin: 0 0 28px;
+      line-height: 36px;
+      font-size: 32px;
+    }
+
+    &-right {
+      &-top {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0 0 28px;
+      }
+
+      &-price {
+        margin: 0;
+        font-family: $ff-manrope;
+        line-height: 36px;
+        font-size: 32px;
+      }
+    }
+
+    &-stats {
+      margin: 0 0 48px;
+
+      &-title {
+        font-weight: 700;
+        font-family: $ff-manrope;
+        font-size: 25px;
+        margin: 0 0 16px;
+      }
+
+      &-list {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        font-family: $ff-manrope;
+
+        &-item {
+          &-category {
+            color: $color-grey;
+            font-size: 15px;
+
+            &-value {
+              font-size: 15px;
+            }
+          }
+        }
+      }
+    }
+
+    &-descr {
+      margin: 0 0 48px;
+
+      &-title {
+        font-weight: 700;
+        font-family: $ff-manrope;
+        font-size: 25px;
+        margin: 0 0 16px;
+      }
+
+      &-text {
+        font-family: $ff-manrope;
+      }
+    }
+
+    &-location {
+      margin: 0 0 48px;
+
+      &-title {
+        font-weight: 700;
+        font-family: $ff-manrope;
+        font-size: 25px;
+        margin: 0 0 16px;
+      }
+
+      &-descr {
+        font-family: $ff-manrope;
+      }
+    }
+
+    &-user {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      margin: 0 0 20px;
+
+      &-title {
+        margin: 0;
+        font-family: $ff-manrope;
+        line-height: 26px;
+        font-size: 21px;
+      }
+
+      &-title-text {
+        font-family: $ff-manrope;
+        font-size: 15px;
+      }
+    }
+
+    &-contacts {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      min-height: 52px;
+
+      &-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 18px;
+        background-color: $color-hint-of-red;
+        border-radius: 16px;
+        color: $color-black;
+        font-family: $ff-manrope;
+        font-size: 14px;
+
+        &:hover {
+          background-color: $color-romance;
+        }
+      }
+    }
+
+    &-actions {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 16px;
+    }
+  }
+
+  &__edit-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 18px;
+    background-color: $color-hint-of-red;
+    border-radius: 16px;
+    color: $color-black;
+    font-family: $ff-manrope;
+    font-size: 14px;
+    text-align: center;
+
+    &:hover {
+      background-color: $color-romance;
+    }
+  }
+
+  &__delete-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 18px;
+    background: none;
+    border: 1.5px solid $color-red;
+    border-radius: 16px;
+    color: $color-red;
+    font-family: $ff-manrope;
+    font-size: 14px;
+    cursor: pointer;
+    width: 100%;
+
+    &:hover {
+      background-color: $color-red;
+      color: $color-white;
+    }
+  }
+
+  &__btn-like {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    background-color: transparent;
+    cursor: pointer;
+    stroke: $color-black;
+
+    &-icon {
+      color: transparent;
+    }
+
+    &:hover &-icon {
+      stroke: $color-red;
+    }
+
+    &--liked &-icon {
+      color: $color-red;
+      stroke: $color-red;
+    }
+  }
+}
+
+.middle {
+  &__wrapper {
+    display: flex;
+    justify-content: center;
+    position: relative;
+
+    &-back {
+      background-image: url("../../img/ads\ imgs/banka20litrov.jpg");
+      filter: blur(15px);
+      display: block;
+      position: absolute;
+      top: -13px;
+      left: -13px;
+      bottom: -13px;
+      right: -13px;
+    }
+
+    &-image {
+      z-index: 10;
+    }
+  }
+}

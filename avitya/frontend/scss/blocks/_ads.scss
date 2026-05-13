@@ -1,0 +1,100 @@
+.ads {
+  &__grid-list {
+    display: grid;
+    grid-template-columns: repeat(4, 236px);
+    gap: 25px 10px;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+  &__title {
+    font-family: $ff-manrope;
+    margin: 0 0 22px;
+  }
+  &__info {
+    font-family: $ff-manrope;
+    margin: 0 0 22px;
+  }
+}
+
+.card {
+  &__top {
+    &-link {
+      width: 236px;
+
+      &-img {
+        height: 236px;
+        border-radius: 16px;
+        overflow: hidden;
+      }
+    }
+  }
+
+  &__bottom {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    padding: 8px 20px 8px 0;
+
+    &-descr {
+      font-family: $ff-manrope;
+      color: $color-black;
+      font-size: 14px;
+      font-weight: 500;
+      margin: 0 0 2px 0;
+      transition: color 0.3s ease;
+
+      &:hover {
+        color: $color-radical-red;
+      }
+    }
+
+    &-price {
+      font-family: $ff-manrope;
+      color: $color-black;
+      font-size: 15px;
+      font-weight: 600;
+      margin: 0 0 3px;
+    }
+
+    &-location {
+      display: flex;
+      gap: 5px;
+      font-family: $ff-manrope;
+      font-size: 14px;
+      align-items: center;
+    }
+
+    &-pin {
+      background-color: transparent;
+      fill: none;
+    }
+
+    &-like {
+      margin: 0;
+      padding: 0;
+      outline: none;
+      border: none;
+      position: absolute;
+      top: 0;
+      right: 0;
+      transform: translateY(50%);
+      background-color: transparent;
+      cursor: pointer;
+      stroke: $color-black;
+
+      &-icon {
+        color: transparent;
+      }
+
+      &:hover &-icon {
+        stroke: $color-red;
+      }
+
+      &--liked &-icon {
+        color: $color-red;
+        stroke: $color-red;
+      }
+    }
+  }
+}

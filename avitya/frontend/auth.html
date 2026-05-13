@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Авторизация</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" type="image/png" href="favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__wrapper">
+          <a href="index.html" class="header__logo-link">
+            <svg
+              class="header__logo"
+              width="109"
+              height="30"
+              aria-hidden="true"
+            >
+              <use xlink:href="img/sprite.svg#header-logo"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="auth">
+        <div class="container">
+          <div class="auth__wrapper">
+            <div class="auth__switch">
+              <label class="auth__switch-item">
+                <input type="radio" name="auth_switch" value="login" checked />
+                Вход с паролем
+              </label>
+              <label class="auth__switch-item">
+                <input type="radio" name="auth_switch" value="reg" />
+                Регистрация
+              </label>
+            </div>
+
+            <div class="auth__forms">
+              <form class="auth__form auth__form-login active" id="form_login">
+                <label class="auth__label">Телефон / Логин</label>
+                <input type="text" name="phone" class="auth__input" required>
+
+                <label class="auth__label">Пароль</label>
+                <input type="password" name="password" class="auth__input" required>
+
+                <button class="auth__btn" type="submit">Войти</button>
+              </form>
+
+              <form class="auth__form auth__form-reg" id="form_reg">
+                <label class="auth__label">Телефон</label>
+                <input type="text" name="phone" class="auth__input" required>
+
+                <label class="auth__label">Никнейм</label>
+                <input type="text" name="nickname" class="auth__input" required>
+
+                <label class="auth__label">Email</label>
+                <input type="email" name="email" class="auth__input" required>
+
+                <label class="auth__label">Пароль</label>
+                <input type="password" name="password" class="auth__input" required>
+
+                <label class="auth__label">Город (необязательно)</label>
+                <input type="text" name="city" class="auth__input">
+
+                <button class="auth__btn" type="submit">Зарегистрироваться</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Login Success Modal -->
+     <div id="modal-login-success" class="modal hidden">
+      <div class="modal__content">
+        <svg
+              class="modal__content-icon"
+              width="80"
+              height="80"
+              aria-hidden="true"
+            >
+              <use xlink:href="img/sprite.svg#check-green-icon"></use>
+            </svg>
+        <p class="modal__content-text">Вы успешно авторизовались</p>
+        <button class="modal__close">x</button>
+      </div>
+     </div>
+    
+     <div id="modal-reg-success" class="modal hidden">
+      <div class="modal__content">
+        <svg
+              class="modal__content-icon"
+              width="80"
+              height="80"
+              aria-hidden="true"
+            >
+              <use xlink:href="img/sprite.svg#check-green-icon"></use>
+            </svg>
+        <p class="modal__content-text">Вы успешно зарегистрировались!</p>
+        <button class="modal__close">x</button>
+      </div>
+     </div>
+
+    <script src="js/main.js" type="module"></script>
+  </body>
+</html>

@@ -1,0 +1,353 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Avitya</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="favicon/favicon-96x96.png"
+      sizes="96x96"
+    />
+    <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="favicon/favicon.ico" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicon/apple-touch-icon.png"
+    />
+    <link rel="manifest" href="/site.webmanifest" />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__wrapper">
+          <a href="index.html" class="header__logo-link">
+            <svg
+              class="header__logo"
+              width="109"
+              height="30"
+              aria-hidden="true"
+            >
+              <use xlink:href="img/sprite.svg#header-logo"></use>
+            </svg>
+          </a>
+          <div class="header__middle">
+            <button class="header__middle-btn" type="button">
+              <svg
+                class="header__middle-btn-icon"
+                width="20"
+                height="20"
+                aria-hidden="true"
+              >
+                <use xlink:href="img/sprite.svg#category-icon"></use>
+              </svg>
+              <span class="header__middle-btn-text"> Все категории </span>
+            </button>
+            <div class="header__middle-search">
+              <input
+                class="header__middle-search-field"
+                type="search"
+                placeholder="Поиск по объявлениям"
+                maxlength="100"
+              />
+
+              <button class="header__middle-search-btn" type="button">
+                Найти
+              </button>
+              <a class="header__middle-create" href="add-edit.html">Создать объявление</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="categories-menu">
+      <div class="container">
+        <div class="categories-menu__wrapper">
+          <ul class="categories-menu__list">
+            <li class="categories-menu__list-item">
+              <a
+                href="category.html?category=Недвижимость"
+                class="categories-menu__list-item-link"
+              >
+                <div class="categories-menu__list-item-link-left">
+                  <img
+                    src="./img/categories-imgs/landlord.png"
+                    alt="Недвижимость"
+                    width="28"
+                    height="22"
+                  />
+                  <span class="categories-menu__list-item-link-left-text"
+                    >Недвижимость</span
+                  >
+                </div>
+                <div class="categories-menu__list-item-link-right">
+                  <svg width="20" height="20" aria-hidden="true">
+                    <use xlink:href="img/sprite.svg#icon-burger-arrow"></use>
+                  </svg>
+                </div>
+              </a>
+            </li>
+
+            <li class="categories-menu__list-item">
+              <a
+                href="category.html?category=Работа"
+                class="categories-menu__list-item-link"
+              >
+                <div class="categories-menu__list-item-link-left">
+                  <img
+                    src="./img/categories-imgs/work.png"
+                    alt="Работа"
+                    width="28"
+                    height="22"
+                  />
+                  <span class="categories-menu__list-item-link-left-text"
+                    >Работа</span
+                  >
+                </div>
+                <div class="categories-menu__list-item-link-right">
+                  <svg width="20" height="20" aria-hidden="true">
+                    <use xlink:href="img/sprite.svg#icon-burger-arrow"></use>
+                  </svg>
+                </div>
+              </a>
+            </li>
+
+            <li class="categories-menu__list-item">
+              <a
+                href="category.html?category=Хобби и отдых"
+                class="categories-menu__list-item-link"
+              >
+                <div class="categories-menu__list-item-link-left">
+                  <img
+                    src="./img/categories-imgs/hobby.png"
+                    alt="Хобби и отдых"
+                    width="28"
+                    height="22"
+                  />
+                  <span class="categories-menu__list-item-link-left-text"
+                    >Хобби и&nbsp;отдых</span
+                  >
+                </div>
+                <div class="categories-menu__list-item-link-right">
+                  <svg width="20" height="20" aria-hidden="true">
+                    <use xlink:href="img/sprite.svg#icon-burger-arrow"></use>
+                  </svg>
+                </div>
+              </a>
+            </li>
+
+            <li class="categories-menu__list-item">
+              <a
+                href="category.html?category=Животные"
+                class="categories-menu__list-item-link"
+              >
+                <div class="categories-menu__list-item-link-left">
+                  <img
+                    src="./img/categories-imgs/animals.png"
+                    alt="Животные"
+                    width="28"
+                    height="22"
+                  />
+                  <span class="categories-menu__list-item-link-left-text"
+                    >Животные</span
+                  >
+                </div>
+                <div class="categories-menu__list-item-link-right">
+                  <svg width="20" height="20" aria-hidden="true">
+                    <use xlink:href="img/sprite.svg#icon-burger-arrow"></use>
+                  </svg>
+                </div>
+              </a>
+            </li>
+
+            <li class="categories-menu__list-item">
+              <a
+                href="category.html?category=Услуги"
+                class="categories-menu__list-item-link"
+              >
+                <div class="categories-menu__list-item-link-left">
+                  <img
+                    src="./img/categories-imgs/services.png"
+                    alt="Услуги"
+                    width="28"
+                    height="22"
+                  />
+                  <span class="categories-menu__list-item-link-left-text"
+                    >Услуги</span
+                  >
+                </div>
+                <div class="categories-menu__list-item-link-right">
+                  <svg width="20" height="20" aria-hidden="true">
+                    <use xlink:href="img/sprite.svg#icon-burger-arrow"></use>
+                  </svg>
+                </div>
+              </a>
+            </li>
+
+            <li class="categories-menu__list-item">
+              <a
+                href="category.html?category=Электроника"
+                class="categories-menu__list-item-link"
+              >
+                <div class="categories-menu__list-item-link-left">
+                  <img
+                    src="./img/categories-imgs/tech.png"
+                    alt="Электроника"
+                    width="28"
+                    height="22"
+                  />
+                  <span class="categories-menu__list-item-link-left-text"
+                    >Электроника</span
+                  >
+                </div>
+                <div class="categories-menu__list-item-link-right">
+                  <svg width="20" height="20" aria-hidden="true">
+                    <use xlink:href="img/sprite.svg#icon-burger-arrow"></use>
+                  </svg>
+                </div>
+              </a>
+            </li>
+
+            <li class="categories-menu__list-item">
+              <a
+                href="category.html?category=Для дома и дачи"
+                class="categories-menu__list-item-link"
+              >
+                <div class="categories-menu__list-item-link-left">
+                  <img
+                    src="./img/categories-imgs/for-countryside.png"
+                    alt="Для дома и дачи"
+                    width="28"
+                    height="22"
+                  />
+                  <span class="categories-menu__list-item-link-left-text"
+                    >Для дома и&nbsp;дачи</span
+                  >
+                </div>
+                <div class="categories-menu__list-item-link-right">
+                  <svg width="20" height="20" aria-hidden="true">
+                    <use xlink:href="img/sprite.svg#icon-burger-arrow"></use>
+                  </svg>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <main>
+      <h1 class="visually-hidden">Заголовок Авитя</h1>
+      <section class="categories">
+        <div class="container">
+          <div class="categories__wrapper">
+            <div class="categories__wrapper-left">
+              <ul class="categories__wrapper-list">
+                <li class="categories__wrapper-list-item card">
+                  <a
+                    href="category.html?category=Недвижимость"
+                    class="card__link"
+                  >
+                    <span class="card__title">Недвижимость</span>
+                    <img
+                      class="card__img"
+                      src="./img/avitya-imgs/landlord.png"
+                      alt="Недвижимость"
+                    />
+                  </a>
+                </li>
+                <li class="categories__wrapper-list-item card">
+                  <a href="category.html?category=Работа" class="card__link">
+                    <span class="card__title">Работа</span>
+                    <img
+                      class="card__img"
+                      src="./img/avitya-imgs/work.png"
+                      alt="Работа"
+                    />
+                  </a>
+                </li>
+                <li class="categories__wrapper-list-item card">
+                  <a
+                    href="category.html?category=Хобби и отдых"
+                    class="card__link"
+                  >
+                    <span class="card__title">Хобби и&nbsp;отдых</span>
+                    <img
+                      class="card__img"
+                      src="./img/avitya-imgs/hobby.png"
+                      alt="Хобби и отдых"
+                    />
+                  </a>
+                </li>
+                <li class="categories__wrapper-list-item card">
+                  <a href="category.html?category=Животные" class="card__link">
+                    <span class="card__title">Животные</span>
+                    <img
+                      class="card__img"
+                      src="./img/avitya-imgs/animals.png"
+                      alt="Животные"
+                    />
+                  </a>
+                </li>
+                <li class="categories__wrapper-list-item card">
+                  <a href="category.html?category=Услуги" class="card__link">
+                    <span class="card__title">Услуги</span>
+                    <img
+                      class="card__img"
+                      src="./img/avitya-imgs/servicies.png"
+                      alt="Услуги"
+                    />
+                  </a>
+                </li>
+                <li class="categories__wrapper-list-item card">
+                  <a
+                    href="category.html?category=Электроника"
+                    class="card__link"
+                  >
+                    <span class="card__title">Электроника</span>
+                    <img
+                      class="card__img"
+                      src="./img/avitya-imgs/tech.png"
+                      alt="Электроника"
+                    />
+                  </a>
+                </li>
+                <li class="categories__wrapper-list-item card">
+                  <a
+                    href="category.html?category=Для дома и дачи"
+                    class="card__link"
+                  >
+                    <span class="card__title">Для дома и&nbsp;дачи</span>
+                    <img
+                      class="card__img"
+                      src="./img/avitya-imgs/for_country_side.png"
+                      alt="Для дома и дачи"
+                    />
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="categories__wrapper-right">
+              <a
+                href="auth.html"
+                class="categories__wrapper-right-login categories__login"
+              >
+                Вход и&nbsp;регистрация
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="ads">
+        <div class="container">
+          <h2 class="ads__title">Рекомендации для вас</h2>
+          <ul class="ads__grid-list" id="ads-list"></ul>
+        </div>
+      </section>
+    </main>
+    <script src="./js/main.js" type="module"></script>
+  </body>
+</html>

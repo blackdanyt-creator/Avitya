@@ -1,0 +1,51 @@
+.modal {
+  position: fixed;
+  inset: 0;
+  background-color: rgba($color: #000000, $alpha: 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+  opacity: 1;
+  transition: opacity 0.2s ease;
+
+  &.active {
+    opacity: 1;
+    pointer-events: all;
+  }
+
+  &__content {
+    background-color: $color-white;
+    padding: 24px 30px;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 320px;
+    font-size: 16px;
+
+    &-text {
+      font-family: $ff-manrope;
+      margin: 0 0 10px;
+    }
+
+    &-icon {
+      margin-bottom: 15px;
+      color: $color-apple;
+      fill-rule: evenodd;
+    }
+  }
+
+  &__close {
+    margin: 15px 0 0 0;
+    padding: 10px 20px;
+    border-radius: 6px;
+    border: none;
+    background-image: linear-gradient(180deg, $color-summer-sky, $color-deep-sky-blue);
+    color: $color-white;
+    cursor: pointer;
+  }
+
+  &.hidden {
+    opacity: 0;
+    pointer-events: none;
+  }
+}
