@@ -5,3 +5,4 @@ img/ads-imgs/*
 Thumbs.db
 
 echo ".idea/" >> .gitignore
+echo ".vscode/" >> .gitignore
